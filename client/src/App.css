@@ -1,0 +1,790 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Delius+Swash+Caps&family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+body {
+  font-family: 'Mountains of Christmas';
+}
+
+.nav-container {
+  width: 100%;
+  height: 158px;
+  background-color: #FFE2AC;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+}
+
+.nav-container h1 {
+  text-align: center;
+  margin-left: -6%;
+  font-size: 32px;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  justify-content: space-evenly;
+}
+
+.links a {
+  float: left;
+  margin-left: 7%;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #710007
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  width: 20%;
+  margin-left: 10%;
+  float: left;
+}
+
+.logo-image {
+  width: 25%;
+  margin-left: 8%;
+}
+
+.login:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.social-icons img{
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+.cart {
+  width: 20%;
+  display: flex;
+  margin-top: 6%;
+  font-size: 18px;
+  margin-left: 8%;
+}
+
+.cart img {
+  width: 8%;
+  height: 8%;
+  margin-top: -2%;
+  margin-right: 2%;
+}
+
+.cart span {
+  /* margin-left: 2%; */
+  color: black;
+}
+
+
+.cart .cart-span {
+  margin-left: 8%;
+  margin-right: 4%;
+}
+
+.cart .cart-image {
+  margin-top: -1%;
+}
+
+.cart p {
+  margin-left: -1%;
+  border: 1px solid black;
+  border-radius: 40%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  font-family: 'Delius Swash Caps';
+}
+
+.cta {
+  background-image: url('./images/landing.jpg');
+  /* margin-top: 25%; */
+  /* padding-top: 2%; */
+  width: 100%;
+  height: 672px;
+  /* background-attachment: scroll; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cta h1 {
+  font-size: 64px;
+  text-align: center;
+  padding-top: 15%;
+  margin-bottom: 2%;
+  color: white;
+}
+
+.cta p {
+  font-size: 30px;
+  text-align: center;
+  /* margin-top: 2%; */
+  color: white;
+}
+
+.cta button {
+  width: 148px;
+  height: 37px;
+  background-color: #FFE2AC;
+  color:#710007;
+  border-radius: 16px;
+  border: none;
+  /* color: white; */
+  font-family: 'Mountains of Christmas';
+  font-size: 26px;
+  margin-left: 46%;
+  margin-top: 2%;
+  cursor: pointer;
+  transition: all 0.2s;
+  
+}
+
+.cta button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #710007;
+  color: white;
+    /* transform: skew(-10deg); */
+}
+
+.bottom-cta {
+  margin: -6% auto;
+  width: 960px;
+  height: 700px;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.trees {
+  padding: 4%;
+  /* border: 1px solid black; */
+  width: 30%;
+  /* overflow: hidden; */
+}
+
+.trees-img {
+  width: 90%;
+  /* border: 1px solid black; */
+  height: 70%;
+  background-image: url('./images/tree1.webp');
+  /* object-position: center; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 6%;
+}
+
+.trees h1 {
+  text-align: center;
+  margin-top: 4%;
+  font-size: 26px;
+}
+
+.trees .line {
+  width: 30%;
+  border-bottom: 1px solid #FFE2AC;
+  margin: 6% auto;
+}
+
+.trees button {
+  width: 148px;
+  height: 37px;
+  background-color: #710007;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  /* color: white; */
+  font-family: 'Mountains of Christmas';
+  font-size: 26px;
+  margin-left: 20%;
+  margin-top: 8%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.trees button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #FFE2AC;
+  color: #710007;
+}
+
+.trees-img2 {
+  width: 90%;
+  /* border: 1px solid black; */
+  height: 70%;
+  background-image: url('./images/reindeer.webp');
+  /* object-position: center; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 6%;
+}
+
+.trees-img3 {
+  width: 90%;
+  /* border: 1px solid black; */
+  height: 70%;
+  background-image: url('./images/ornament1.webp');
+  /* object-position: center; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 6%;
+}
+
+.modal {
+  text-align: center;
+  /* background-color: #FFE2AC; */
+}
+
+.login-h1 {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 42px;
+}
+
+.modal-button {
+  float: right;
+  margin-top: -10%;
+  margin-right: 10%;
+  border: none;
+  background-color: #FFE2AC;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+form {
+  font-family: 'Delius Swash Caps';
+  margin-top: 2%;
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 2%;
+  font-family: 'Delius Swash Caps';
+  background-color: #FFE2AC;
+  height: 30px;
+  width: 258px;
+}
+
+form input:focus {
+  outline: none;
+  background-color: #FFE2AC;
+}
+
+form input::placeholder {
+  padding-bottom: 10%;
+  font-size: 16px;
+}
+
+form button {
+  width: 148px;
+  height: 37px;
+  background-color: #710007;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  /* color: white; */
+  font-family: 'Mountains of Christmas';
+  font-size: 26px;
+  /* margin-left: 20%;
+  margin-top: 8%; */
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: #710007;
+}
+
+form p {
+  font-size: 14px;
+  margin-top: 2%;
+}
+
+form span {
+  color: blue;
+  cursor: pointer;
+}
+
+form span:hover {
+  text-decoration: underline;
+}
+
+.footer-container {
+  height: 110px;
+  width: 100%;
+  background-color: #FFE2AC;
+  /* margin-top: 44%; */
+  bottom: 0;
+  /* padding-bottom: -2%; */
+  text-align: center;
+  /* position: fixed; */
+}
+
+.footer-container ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.footer-container ul li {
+  margin-left: 3%;
+  font-size: 24px;
+}
+
+.footer-container ul li:hover {
+  color: #710007;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-container h1 {
+  padding-top: 1%;
+}
+
+.shop {
+  background-color: #FFE2AC;
+}
+
+.card-container {
+  padding-top: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 99%;
+}
+
+.shop-h1 {
+  text-align: center;
+  font-size: 42px;
+  padding-top: 15%;
+}
+
+.shop-line {
+  border-bottom: 2px solid #710007;
+  width: 4%;
+  margin: 1% auto;
+}
+
+.card {
+  margin-bottom: 6%;
+  cursor: pointer;
+}
+
+.card .view {
+  margin-top: -5%;
+  width: 100%;
+  opacity: 90%;
+  visibility: hidden;
+  background-color: grey;
+  font-size: 18px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.card:hover .view {
+  visibility: visible;
+}
+
+.card img {
+  width: 436px;
+  height: 462px;
+}
+
+.card h1 {
+  text-align: center;
+  margin-top: 6%;
+  font-size: 20px;
+  font-family: 'Delius Swash Caps';
+}
+
+.card p {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Delius Swash Caps';
+  margin-top: 2%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hidden button {
+  width: 100%;
+  margin-top: 2%;
+  background-color: #710007;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Delius Swash Caps';
+  font-size: 20px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.card:hover .hidden {
+  visibility: visible;
+}
+
+
+.item-container {
+  background-color: #FFE2AC;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2%;
+}
+
+.product-container {
+  width: 80%;
+  padding-top: 15%;
+  margin-left: 20%;
+}
+
+.product-container h1 {
+  font-size: 20px;
+  margin-bottom: 4%;
+}
+
+.product-container img {
+  width: 540px;
+  height: 648px;
+}
+
+.item {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.item-image p {
+  width: 540px;
+  margin-top: 4%;
+  font-family: 'Delius Swash Caps';
+  font-size: 16px;
+  margin-bottom: 8%;
+}
+
+.item-info {
+  margin-left: 14%;
+}
+
+.item-info h1 {
+  font-size: 30px;
+}
+
+.item-info .price {
+  font-family: 'Delius Swash Caps';
+  font-size: 20px;
+  margin-top: 12%;
+  margin-bottom: 12%;
+}
+
+.item-info h3 {
+  font-size: 20px;
+  font-family: 'Delius Swash Caps';
+}
+
+.item-info input {
+  width: 20%;
+  height: 45px;
+  margin-bottom: 12%;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+}
+
+.item-info input:focus {
+  outline: none;
+}
+
+.item-info button {
+  width: 293px;
+  height: 54px;
+  background-color: #710007;
+  border: none;
+  color: white;
+  font-size: 26px;
+  font-family: 'Mountains of Christmas';
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.accordion {
+  margin-top: 12%;
+  width: 500px;
+}
+
+.accordion-title {
+  font-family: 'Delius Swash Caps';
+  cursor: pointer;
+  margin-bottom: 6%;
+  display: flex;
+}
+
+.accordion-title h1 {
+  font-size: 20px;
+  margin-right: 70%;
+}
+
+.accordion-title span {
+  font-size: 20px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid black;
+  margin-bottom: 6%;
+}
+
+.accordion-info {
+  margin-bottom: 6%;
+  font-size: 16px;
+  font-family: 'Delius Swash Caps'
+}
+
+.card-content-container {
+  display: flex;
+}
+
+.filter-container {
+  margin-top: 4%;
+  padding-left: 4%;
+  width: 12%;
+}
+
+.filter-container h1 {
+  font-size: 32px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding-bottom: 6%;
+}
+
+.filter-container h2 {
+  margin-top: 10%;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 60%;
+  margin-bottom: 8%;
+}
+
+.filter-container p {
+  margin-bottom: 4%;
+  color: black;
+}
+
+.filter-container p:hover {
+  color: #710007;
+  text-decoration: underline;
+}
+
+.cart-page {
+  background-color: #FFE2AC;
+  width: 100%;
+  height: 100vh;
+  padding-top: 14%;
+}
+
+.cart-container {
+  /* padding-top: 10%; */
+  margin: 0 auto;
+  width: 1102px;
+  height: 70%;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.cart-info {
+  width: 60%;
+}
+
+.cart-info h1 {
+  margin-top: 6%;
+  font-size: 26px;
+  margin-left: 4%;
+  margin-bottom: 2%;
+}
+.cart-line {
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin-left: 4%;
+}
+
+.cart-total {
+  width: 30%;
+  margin-right: 4%;
+}
+
+.cart-total h1 {
+  margin-top: 12%;
+  font-size: 26px;
+  margin-bottom: 4%;
+}
+
+.cart-line2 {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.cart-total .subtotal {
+  font-size: 24px;
+  font-family: 'Delius'
+}
+
+.cart-total .subtotal span {
+  margin-left: 40%;
+  font-family: 'Delius'
+}
+
+.cart-card-container {
+  /* display: flex; */
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 4%;
+  /* flex-direction: column; */
+}
+
+.cart-card-container img {
+  width: 99px;
+  height: 99px;
+}
+
+.cart-card {
+  display: flex;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  /* margin-top: 2%; */
+  border-bottom: 1px solid grey;
+  width: 76%;
+  margin-left: 4%;
+}
+
+.cart-card h1 {
+  font-size: 20px;
+  /* margin-top: px; */
+  width: 200px;
+
+}
+
+.cart-card h4 {
+  margin-top: 12%;
+  margin-left: -25%;
+  font-family: 'Delius';
+}
+
+.cart-card span {
+  font-size: 16px;
+  margin-left: 8%;
+  margin-top: 6%;
+  font-family: 'Delius';
+}
+
+.cart-card p {
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.cart-total button {
+  margin-top: 6%;
+  margin-left: 13%;
+  width: 248px;
+  height: 54px;
+  background-color: #710007;
+  border: none;
+  color: white;
+  font-size: 26px;
+  font-family: 'Mountains of Christmas';
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.links .about {
+  text-decoration: line-through;
+}
+
+.links .about:hover {
+  text-decoration: line-through;
+  color: black;
+}
+
+/* .cart-line {
+  border-bottom: 1px solid grey;
+  margin-top: 1%;
+} */
